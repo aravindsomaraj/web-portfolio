@@ -443,7 +443,7 @@ header {
     
     .about-me__img {
         object-fit: cover;  /* resize image, but keep aspect ratio */
-        height: 550px;
+        min-height: 550px;
         grid-area: img;
         position: relative;
         z-index: 2;
