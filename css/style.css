@@ -307,6 +307,10 @@ header {
     box-shadow: var(--bs);
 }
 
+.intro__subtitle__img {
+    box-shadow: var(--bs);
+}
+
 .section__subtitle--intro {
     display: inline-block;
 }
@@ -325,11 +329,20 @@ header {
     
     .intro__img {
         grid-area: img;
-        min-width: 250px;
+        height: 300px;
+        min-width: 220px;
         position: relative;
         z-index: 2;
     }    
     
+    .intro__subtitle__img {
+        grid-area: img;
+        top: 20px;
+        height: 280px;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
     .section__subtitle--intro {
         align-self: start;
         grid-column: -1 / 1;
@@ -337,6 +350,7 @@ header {
         text-align: right;
         position: relative;
         left: -1.5em;
+        /* bottom: 0;    Adjust the subtitle area */
         width: calc(100% + 1.5em);
     }
 }
@@ -410,6 +424,7 @@ header {
             "subtitle img"
             "text img";
         grid-column-gap: 2em;
+        overflow: hidden;
     }
     
     .section__title--about {
@@ -427,6 +442,8 @@ header {
     }
     
     .about-me__img {
+        object-fit: cover;  /* resize image, but keep aspect ratio */
+        height: 550px;
         grid-area: img;
         position: relative;
         z-index: 2;
@@ -443,7 +460,7 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* adjust image size */
 }
 
 .portfolio__item {
@@ -455,6 +472,13 @@ header {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+    /* height: 300px;
+    width: 300px; */
+    /* min-height: 250px;
+    min-width: 250px; */
+    height: 100%;       /*Making the image fit */
+    width: 100%;
+    object-fit: cover;
 }
 
 .portfolio__item:focus {
