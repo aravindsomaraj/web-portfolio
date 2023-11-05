@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My portfolio website</title>
-        <link type="image/png" sizes="16x16" rel="icon" href="img/icon.png">
+        <link type="image/png" sizes="16x16" rel="icon" href="../img/icon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
         <!-- Update these with your own fonts -->
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
 
     </head>
     <body>
@@ -35,14 +35,23 @@
 
         <section class="intro">
             <h1 class="section__title section__subtitle--project__title" id="ai">
-                &nbsp;<strong>Custom C++ Template Library</strong>
+                <strong>Image Search Engine</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Of a few new data structures</p>
-            <img src="img/cpp.jpeg" alt="" class="intro__subtitle__img" style="height: 100%;">
+            <p class="section__subtitle section__subtitle--intro">using Python and Jupyter</p>
+            <img src="../img/searchengine.jpg" alt="" class="intro__subtitle__img" style="margin-bottom:25px; height:auto; max-width: 100%;">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>An interested step towards open-source contribution that I've been doing for a while. In this ongoing project, I strive to create custom data structures that are otherwise not available in C++ STL, while maintaining efficiency and usefulness.</p>
+            <p>This project is a result of a course on Deep Learning and Convoluted Nueral Networks (CNN), where we build an image search engine using open source Python and Jupyter framework. This project includes a Jupyter notebook that uses VGG models of the CNN architecture to extract image embeddings and text embeddings and a Flask web application that allows users to search for specific images.
+                <h2> Features </h2>
+                <ul>
+                    <li>Image and text embeddings: In addition to searching for similar images, the search engine can also perform text to image and image to text searches using image and text embeddings. This means that users can input text or an image and the search engine will return the most relevant images or text based on their similarities to the input.</li>
+                    <li>Approximate nearest neighbor algorithm: To speed up the search process, the search engine uses an approximate nearest neighbor algorithm. This algorithm finds the nearest neighbors to a given image by searching through a smaller set of representative vectors rather than the entire dataset.</li>
+                    <li>Fine-tuning accuracy of the model: The search engine allows for fine-tuning the accuracy of the model by adjusting the parameters and training the model on a smaller dataset.</li>
+                    <li>Real-life web application: The search engine comes with a real-life web application that allows users to perform visual similarity searches by uploading their own images or using pre-existing ones.</li>
+                </ul>
+            </p>
+            
         </div>
         
         
@@ -74,7 +83,7 @@
         </footer>
         
         
-        <script src="js/index.js"></script>
+        <script src="../js/index.js"></script>
         
     </body>
 </html>
