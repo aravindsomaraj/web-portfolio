@@ -304,9 +304,9 @@ header {
     position: relative;
 }
 
-.intro__img {
+/* .intro__img {
     box-shadow: var(--bs);
-}
+} */
 
 .intro__subtitle__img {
     box-shadow: var(--bs);
